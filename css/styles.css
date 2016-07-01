@@ -140,3 +140,40 @@ h2 {
   margin-left: 2em;
   color: #090707;
 }
+
+#reasons-to-adopt {
+  float: left;
+  width: 60%;
+}
+
+#kid-questioning-wrapper {
+  float: right;
+  width: 40%;
+  position: relative;
+}
+
+#kid-questioning {
+  display: block;
+  postion: absolute;
+  top: 25%;
+  left: 25%;
+}
+
+h3 {
+  font-family: "Helvetica", sans-serif;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+ul {
+  line-height: 1.2em;
+  list-style: circle;
+  color: #e53e40;
+  font-family: "Helvetica", sans-serif;
+}
+
+li {
+  padding-bottom: 0.3em;
+}
