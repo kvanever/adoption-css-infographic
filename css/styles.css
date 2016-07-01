@@ -55,9 +55,6 @@ q:before, q:after {
 	content: '';
 	content: none;
 }
-table {
-	border-spacing: 3em;
-}
 
 body::before {
   content: ' ';
@@ -77,9 +74,9 @@ body::before {
 
 .container,
 #background-caption {
-  -webkit-box-shadow: -0.5em -0.5em 0.25em 0 rgba(0,0,0,0.5);
-  -moz-box-shadow: -0.5em -0.5em 0.25em 0 rgba(0,0,0,0.5);
-  box-shadow: -0.5em -0.5em 0.25em 0 rgba(0,0,0,0.5);
+  -webkit-box-shadow: -2px -2px 1px 0 rgba(0,0,0,0.5);
+  -moz-box-shadow: -2px -2px 1px 0 rgba(0,0,0,0.5);
+  box-shadow: -2px -2px 1px 0 rgba(0,0,0,0.5);
   border-radius: 3px 3px 3px 3px;
   -moz-border-radius: 3px 3px 3px 3px;
   -webkit-border-radius: 3px 3px 3px 3px;
@@ -88,24 +85,24 @@ body::before {
 
 #background-caption {
   position: absolute;
-  bottom: 1em;
-  right: 1em;
+  bottom: 20px;
+  right: 20px;
   color: white;
   background-color: black;
   opacity: 0.8;
   z-index: 2;
   padding: 0.8em;
-  width: 25%;
+  width: 150px;
   font-size: 0.7em;
 }
 
 .container {
-  width: 60%;
-  height: 100em;
-  margin-top: 5%;
+  width: 750px;
+  height: 1300px;
+  margin-top: 100px;
   margin-right: auto;
   margin-left: auto;
-  padding: 5%;
+  padding: 50px;
   position: relative;
   border: 2px solid #333;
   z-index: 3;
@@ -124,7 +121,7 @@ h1, h2 {
 }
 
 h1 {
-  font-size: 7em;
+  font-size: 90pt;
   color: #e53e40;
   font-weight: bold;
   text-transform: uppercase;
@@ -134,117 +131,128 @@ h1 {
 
 h2 {
   font-family: 'chunk';
-  font-size: 1em;
+  font-size: 12pt;
   text-transform: uppercase;
-  margin-top: 0.5em;
-  margin-left: 2em;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 560px;
   color: #090707;
+  margin-bottom: 20px;
 }
 
 #reasons-to-adopt {
   float: left;
-  width: 60%;
+  width: 400px;
 }
 
 #kid-questioning-wrapper {
   float: right;
-  width: 40%;
+  width: 200px;
   position: relative;
 }
 
 #kid-questioning {
   display: block;
-  postion: absolute;
-  top: 25%;
-  left: 25%;
+  position: absolute;
+  top: 3px;
+  left: -50px;
 }
 
 h3 {
   font-family: "Helvetica", sans-serif;
-  margin-top: 1em;
-  margin-bottom: 1em;
+  margin-top: 10px;
+  margin-bottom: 10px;
   font-weight: bold;
-  font-size: 1.2em;
+  font-size: 12pt;
 }
 
 ul {
-  line-height: 1.2em;
-  list-style: circle;
+  line-height: 14pt;
+  list-style: none;
   color: #e53e40;
   font-family: "Helvetica", sans-serif;
+  font-weight: bold;
 }
 
 li {
-  padding-bottom: 0.3em;
+  padding-bottom: 10px;
 }
 
 #kid-questioning-caption {
   position: absolute;
-  top: 50%;
-  left: 55%;
-  padding: 0.8em;
-  font-size: 0.7em;
+  top: 85px;
+  left: 95px;
+  padding: 8px;
+  font-size: 10pt;
   text-align: center;
   background: white;
   border: 1px solid black;
-  width: 40%;
+  width: 130px;
 }
 
 #charts {
   position: absolute;
-  top: 30%;
-  left: 8.5%;
+  top: 490px;
+  left: 50px;
+}
+
+table {
+	border-spacing: 50px;
+  width: 700px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 th {
   text-transform: capitalize;
   text-align: center;
+  font-family: "Helvetica", sans-serif;
 }
 
 td {
   color: transparent;
-  height: 10em;
+  height: 200px;
   border-left: 1px solid black;
   border-bottom: 1px solid black;
-  margin-right: 10%;
 }
 
 td#population::after {
   content: "";
-  width: 30%;
-  height: 80%;
+  width: 200px;
+  height: 200px;
   border-bottom: 5px solid red;
   border-radius: 0px 0px 200px 0px;
   -moz-border-radius: 0px 0px 200px 0px;
   -webkit-border-radius: 0px 0px 200px 0px;
   position: absolute;
-  top: -10%;
-  left: 6%;
+  top: 130px;
+  left: 50px;
 }
 
 td#area::after {
   content: "";
-  width: 28%;
+  width: 200px;
   border-bottom: 5px solid red;
   position: absolute;
-  top: 60%;
-  left: 45.5%;
+  top: 255px;
+  left: 388px;
 }
 
 p {
   font-family: "Helvetica", sans-serif;
   display: block;
-  line-height: 1.5em;
-  width: 70%;
+  line-height: 14pt;
+  width: 600px;
   margin-right: auto;
   margin-left: auto;
 }
 
 #gallery {
   position: absolute;
-  top: 58%;
-  left: 8.5%;
-  width: 80%;
+  top: 950px;
+  left: 50px;
+  width: 650px;
 }
 
 .square {
@@ -282,4 +290,8 @@ p {
     height:auto;
     max-height:90%;
     max-width:100%;
+}
+
+strong {
+  font-weight: bold;
 }
