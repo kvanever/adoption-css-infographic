@@ -56,8 +56,7 @@ q:before, q:after {
 	content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+	border-spacing: 3em;
 }
 
 body::before {
@@ -102,6 +101,7 @@ body::before {
 
 .container {
   width: 60%;
+  height: 100em;
   margin-top: 5%;
   margin-right: auto;
   margin-left: auto;
@@ -188,4 +188,81 @@ li {
   background: white;
   border: 1px solid black;
   width: 40%;
+}
+
+#charts {
+  position: absolute;
+  top: 30%;
+  left: 8.5%;
+}
+
+th {
+  text-transform: capitalize;
+  text-align: center;
+}
+
+td {
+  color: transparent;
+  height: 10em;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+  margin-right: 10%;
+}
+
+td#population::after {
+  content: "";
+  width: 30%;
+  height: 80%;
+  border-bottom: 5px solid red;
+  border-radius: 0px 0px 200px 0px;
+  -moz-border-radius: 0px 0px 200px 0px;
+  -webkit-border-radius: 0px 0px 200px 0px;
+  position: absolute;
+  top: -10%;
+  left: 6%;
+}
+
+td#area::after {
+  content: "";
+  width: 28%;
+  border-bottom: 5px solid red;
+  position: absolute;
+  top: 60%;
+  left: 45.5%;
+}
+
+#gallery {
+  position: absolute;
+  top: 56%;
+  left: 8.5%;
+}
+
+.square {
+    float:left;
+    position: relative;
+    width: 50%;
+    padding-bottom : 50%;
+    margin:1.66%;
+    overflow:hidden;
+    background-color: black;
+}
+
+.content {
+    position:absolute;
+    height:80%;
+    width:90%;
+    padding: 10% 5%;
+}
+
+.table{
+    display:table;
+    height:100%;
+    width:100%;
+}
+
+.table-cell{
+    display:table-cell;
+    vertical-align:middle;
+    height:100%;
+    width:100%;
 }
