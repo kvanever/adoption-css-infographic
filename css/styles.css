@@ -231,17 +231,27 @@ td#area::after {
   left: 45.5%;
 }
 
+p {
+  font-family: "Helvetica", sans-serif;
+  display: block;
+  line-height: 1.5em;
+  width: 70%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 #gallery {
   position: absolute;
-  top: 56%;
+  top: 58%;
   left: 8.5%;
+  width: 80%;
 }
 
 .square {
     float:left;
     position: relative;
-    width: 50%;
-    padding-bottom : 50%;
+    width: 30%;
+    padding-bottom : 30%;
     margin:1.66%;
     overflow:hidden;
     background-color: black;
@@ -265,4 +275,11 @@ td#area::after {
     vertical-align:middle;
     height:100%;
     width:100%;
+}
+
+.kid-photo {
+    width:auto;
+    height:auto;
+    max-height:90%;
+    max-width:100%;
 }
